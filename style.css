@@ -276,6 +276,7 @@ html::-webkit-scrollbar-thumb{
   background: #fff;
   padding: 100px 40px 60px;
   box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+  cursor: pointer;
 }
 
 .procedure .box-container .box::before{
@@ -402,14 +403,17 @@ html::-webkit-scrollbar-thumb{
 }
 
 .home-forfait .box-container .box{
-  box-shadow: 8px 8px 10px 10px var(--light-bg);
+  box-shadow: 0 15px 25px 0 var(--main-color);
+  /* box-shadow: 8px 8px 10px 10px var(--light-bg); */
   padding: 2rem 2.2rem;
   width: 18rem;
   height: 22rem;
+  cursor: pointer;
+  border-radius: 10%;
 }
 
 .home-forfait .box-container .box:hover{
-  box-shadow: 1px 1px 10px 1px var(--light-bg) inset;
+  box-shadow: 1px 1px 10px 1px var(--main-color) inset;
 }
 
 .home-forfait .box-container .box h3{
@@ -475,7 +479,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .convaicus{
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .convaicus .box-container{
@@ -619,6 +623,10 @@ html::-webkit-scrollbar-thumb{
   text-transform: uppercase;
 }
 
+.devis .devis-form{
+  margin-bottom: 5rem;
+}
+
 .devis .devis-form .flex{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
@@ -674,6 +682,10 @@ html::-webkit-scrollbar-thumb{
   align-items: center;
   text-align: center;
   margin-top: 4rem;
+}
+
+#before_footer{
+  margin-bottom: 10rem;
 }
 
 .service-title{
