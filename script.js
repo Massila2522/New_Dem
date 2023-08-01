@@ -1,9 +1,9 @@
-let menu = document.querySelector('.header #bars');
+let menu = document.querySelector('.header #bars i');
 let navbar = document.querySelector('.header .navbar');
 
 menu.onclick = () =>{
- menu.classList.toggle('fa-times');  
- navbar.classList.toggle('activate');
+  menu.classList.toggle('fa-times');  
+  navbar.classList.toggle('activate');
 };
 
 window.onscroll = () =>{

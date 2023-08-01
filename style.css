@@ -147,12 +147,7 @@ html::-webkit-scrollbar-thumb{
 
 .home .swiper .swiper-wrapper .slide .content{
   width: 50rem;
-  /* display: none; */
 }
-
-/* .home .swiper-slide-active .content{
-  display: inline-block;
-} */
 
 .home .swiper .swiper-wrapper .slide .content h3{
   font-size: 4vw;
@@ -258,7 +253,6 @@ html::-webkit-scrollbar-thumb{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding:5rem 10%; */
   min-height: 100vh;
   background: linear-gradient(var(--second-color), var(--second-color) 50%, #fff 50%, #fff 100%);
 }
@@ -288,13 +282,13 @@ html::-webkit-scrollbar-thumb{
   height: 100%;
   background: var(--main-color);
   transform: scaleY(0);
-  transform-origin: top;      /* Ces deux lignes servent à réduire la couleur vers le haut après l'enlèvement du curseur */
+  transform-origin: top;
   transition: transform 0.5s;
 }
 
 .procedure .box-container .box:hover:before{
   transform: scaleY(1);
-  transform-origin: bottom; /* Ces deux lignes servent à faire appareitre la couleur vers du bas */
+  transform-origin: bottom;
   transition: transform 0.5s;
 }
 
@@ -404,7 +398,6 @@ html::-webkit-scrollbar-thumb{
 
 .home-forfait .box-container .box{
   box-shadow: 0 15px 25px 0 var(--main-color);
-  /* box-shadow: 8px 8px 10px 10px var(--light-bg); */
   padding: 2rem 2.2rem;
   width: 18rem;
   height: 22rem;
@@ -434,7 +427,6 @@ html::-webkit-scrollbar-thumb{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 50px 8%; */
 }
 
 .commentaires .container .gallery{
@@ -566,15 +558,14 @@ html::-webkit-scrollbar-thumb{
 .services .box-container h1{
   font-size: 3rem;
   font-weight: bold;
-  
   background-color: var(--main-color);
   background-image: linear-gradient(45deg, var(--main-color), var(--second-color));
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
+  /* background-clip: content-box; */
+  color: transparent;
   margin: 2rem;
   line-height: 3.5rem;
 }
@@ -747,29 +738,6 @@ html::-webkit-scrollbar-thumb{
   text-transform: none;
 }
 
-/* .services-devis{
-  background-image: linear-gradient(45deg, var(--second-color), var(--main-color));
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.services-devis .content{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-
-.services-devis .content h1{
-  color: white;
-  font-size: 1.6rem;
-} */
-
 .services-devis{
   background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.5)), url("images/bg4.jpg");
   background-repeat: repeat;
@@ -804,10 +772,6 @@ html::-webkit-scrollbar-thumb{
   background-color: var(--main-color);
   color: var(--second-color);
 }
-
-/* .contact .container{
-  margin: 50px auto;
-} */
 
 .contact .container h1{
   margin-bottom: 10px;
@@ -1004,12 +968,12 @@ html::-webkit-scrollbar-thumb{
   }
 
   .header #bars{
-    display: inline-block;
-    transition: .2s  linear;      
+    display: inline-block;     
   }
 
-  .header #bars.fa-times{
-    transform: rotate(180deg); 
+  .header #bars i.fa-times{
+    transform: rotate(180deg);
+    transition:transform .2s  linear;
   }
 
   .header .navbar{
@@ -1017,6 +981,7 @@ html::-webkit-scrollbar-thumb{
     top: 99%; left: 0%; right: 0%;
     background-color: white;
     border-top: var(--border);
+    border-bottom: var(--border);
     padding: 2rem;
     transform: .2s linear;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
