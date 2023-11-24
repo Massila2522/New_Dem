@@ -10,9 +10,6 @@ Explore the front end of the New Dem Moving Company website hosted on GitHub Pag
 
 **Note:** This link directs you to the live version of the front end. The full functionality, including form submissions and server-side features, may not be available without setting up the complete project locally.
 
-## Opening the Full Project
-For the complete experience, including server-side functionality, follow the [instructions to open the full project locally](#opening-the-project).
-
 ## Opening the Project
 
 ### Option 1: Local Setup with XAMPP
@@ -28,6 +25,14 @@ For the complete experience, including server-side functionality, follow the [in
 1. Open the cloned project folder in Visual Studio Code.
 2. Install recommended extensions if prompted.
 3. Open your web browser and go to http://localhost/New_Dem.
+
+## Project Optimization
+While the current version of the website is functional, I have plans to optimize its performance to enhance the user experience. Potential optimization areas include:
+- [ ] **Image Compression:** Optimizing image sizes for faster loading.
+- [ ] **Caching Strategies:** Implementing caching mechanisms to reduce load times.
+- [ ] **Code Refactoring:** Streamlining and improving the efficiency of the codebase.
+
+Feel free to contribute or provide suggestions for improvement.
 
 ## License
 This project is licensed under the MIT License.
