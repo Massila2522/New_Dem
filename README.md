@@ -11,8 +11,6 @@ Explore the front end of the New Dem Moving Company website hosted on GitHub Pag
 **Note:** This link directs you to the live version of the front end. The full functionality, including form submissions and server-side features, may not be available without setting up the complete project locally.
 
 ## Opening the Project
-
-### Option 1: Local Setup with XAMPP
 1. Download and install [XAMPP](https://www.apachefriends.org/index.html).
 2. Clone this repository to your local machine.
    ```bash
@@ -20,11 +18,6 @@ Explore the front end of the New Dem Moving Company website hosted on GitHub Pag
 3. Move the cloned folder to the 'htdocs' directory in your XAMPP installation folder.
 4. Start the Apache server and MySQL in XAMPP.
 5. Open your web browser and go to http://localhost/New_Dem.
-
-### Option 2: Open with Visual Studio Code
-1. Open the cloned project folder in Visual Studio Code.
-2. Install recommended extensions if prompted.
-3. Open your web browser and go to http://localhost/New_Dem.
 
 ## Project Optimization
 While the current version of the website is functional, I have plans to optimize its performance to enhance the user experience. Potential optimization areas include:
